@@ -1,0 +1,420 @@
+{
+  "timestamp": "2026-01-21T12:48:57.036Z",
+  "testAccount": {
+    "email": "test443675@example.com",
+    "userId": "9bade7f2-076a-4f80-a7a6-28cb3fba0d56"
+  },
+  "endpoints": {
+    "/user": {
+      "description": "Current user complete profile",
+      "status": 200,
+      "success": true,
+      "data": {
+        "id": "9bade7f2-076a-4f80-a7a6-28cb3fba0d56",
+        "email": "test443675@example.com",
+        "firstName": "Test443675",
+        "lastName": "User443675",
+        "phone": "+15550443675",
+        "address": null,
+        "role": "provider",
+        "providerId": "PROV443675",
+        "isAvailable": false,
+        "mfaEnabled": false,
+        "smsNotifications": true,
+        "accountStatus": "verified",
+        "resetCodeTimeStamp": null,
+        "resetCode": null,
+        "updatedAt": "2026-01-21T12:33:14.533Z",
+        "createdAt": "2026-01-21T12:33:14.533Z",
+        "stripeAccountId": null,
+        "cometChatId": "6912ff95-5cfc-4665-9e1d-5d1434fddea7",
+        "disabled": false,
+        "pushNotificationsEnabled": false,
+        "userInterest": {
+          "id": "ea972d5a-9909-4f86-9132-b529ad534f60",
+          "name": "Test443675 User443675",
+          "phone": "+15550443675",
+          "email": "test443675@example.com",
+          "specialty": "Radiology",
+          "additionalInfo": null,
+          "availabilityPreferenceDays": [],
+          "availabilityPreferenceHours": [],
+          "weekdays": false,
+          "weekends": false,
+          "swingShifts": false,
+          "overnights": false,
+          "dedicatedShifts": false,
+          "rvuPerMonth": null,
+          "stateLicenses": [
+            "CA",
+            "NY"
+          ],
+          "agreeToTerms": true,
+          "hasMalpracticeInsurance": true,
+          "userId": "9bade7f2-076a-4f80-a7a6-28cb3fba0d56",
+          "createdAt": "2026-01-21T12:33:14.533Z",
+          "updatedAt": "2026-01-21T12:33:14.533Z"
+        }
+      },
+      "timestamp": "2026-01-21T12:48:59.589Z"
+    },
+    "/allGroups?page=1&perPage=50": {
+      "description": "All groups in system - Page 1",
+      "status": 200,
+      "success": true,
+      "data": {
+        "docs": [
+          {
+            "id": "652020c6-9ea9-458e-8669-29bebc26d658",
+            "facilityName": "Alabama Coastal Radiology",
+            "description": "Mobile Infirmary Health System",
+            "phone": "+12514600326",
+            "isActive": true,
+            "groupStatus": "open",
+            "payoutEnabled": false,
+            "groupProvidersCount": 27,
+            "userStatusInGroup": null,
+            "usdPerRvuHigh": "45",
+            "usdPerRvuLow": "10",
+            "usdPerRvuRecent": "45",
+            "rvuRateVisible": false
+          },
+          {
+            "id": "c5951e94-83f2-4135-9c13-e4d6e09d36c4",
+            "facilityName": "RABR",
+            "description": "Radiology Associates of Baton Rouge",
+            "phone": "+12257570552",
+            "isActive": true,
+            "groupStatus": "open",
+            "payoutEnabled": false,
+            "groupProvidersCount": 76,
+            "userStatusInGroup": null,
+            "usdPerRvuHigh": "100",
+            "usdPerRvuLow": "30",
+            "usdPerRvuRecent": "65",
+            "rvuRateVisible": false
+          }
+        ],
+        "currentPage": 1,
+        "totalItems": 2,
+        "totalPages": 1,
+        "perPage": 50
+      },
+      "timestamp": "2026-01-21T12:49:01.740Z"
+    },
+    "/myGroups?page=1&perPage=50": {
+      "description": "User group memberships",
+      "status": 200,
+      "success": true,
+      "data": {
+        "docs": [],
+        "currentPage": 1,
+        "totalPages": 0,
+        "totalItems": 0,
+        "perPage": 50
+      },
+      "timestamp": "2026-01-21T12:49:02.039Z"
+    },
+    "/group/checkUserLnqRights": {
+      "description": "User LnQ permissions",
+      "status": 200,
+      "success": true,
+      "data": {
+        "hasLnqRights": false,
+        "groups": []
+      },
+      "timestamp": "2026-01-21T12:49:02.329Z"
+    },
+    "/group/checkUserRVUTrackerRights": {
+      "description": "User RVU tracker permissions",
+      "status": 200,
+      "success": true,
+      "data": {
+        "hasRVUTrackerRights": false,
+        "groups": []
+      },
+      "timestamp": "2026-01-21T12:49:02.625Z"
+    },
+    "/group/getGroupsWithLnqRights?page=1&perPage=50": {
+      "description": "Groups with LnQ rights",
+      "status": 200,
+      "success": true,
+      "data": {
+        "docs": [],
+        "currentPage": 1,
+        "totalPages": 0,
+        "totalItems": 0,
+        "perPage": 50
+      },
+      "timestamp": "2026-01-21T12:49:02.911Z"
+    },
+    "/group?id=652020c6-9ea9-458e-8669-29bebc26d658": {
+      "description": "Group details: Alabama Coastal Radiology",
+      "status": 200,
+      "success": true,
+      "data": {
+        "message": "Group found",
+        "group": {
+          "id": "652020c6-9ea9-458e-8669-29bebc26d658",
+          "facilityId": null,
+          "facilityName": "Alabama Coastal Radiology",
+          "description": "Mobile Infirmary Health System",
+          "isActive": true,
+          "phone": "+12514600326",
+          "email": "bblake@bwfcpa.com",
+          "groupStatus": "open",
+          "timeZone": "America/Chicago",
+          "stripeCustomerId": "cus_SzK4LAMeC6lkJ4",
+          "payoutEnabled": false,
+          "rvuRateVisible": false,
+          "preferredPaymentMethodId": "pm_1SDr38BnXgzXDYKOa2YXSq7n",
+          "preferredPaymentMethodType": "card",
+          "updatedAt": "2025-12-31T16:28:08.536Z",
+          "createdAt": "2025-09-03T18:29:01.944Z",
+          "usdPerRvuHigh": "45",
+          "usdPerRvuLow": "10",
+          "usdPerRvuRecent": "45",
+          "lastSync": {
+            "id": "b6bcbf55-e436-46eb-aa81-ee39a3eb0535",
+            "syncStartTime": "2026-01-16T15:21:42.461Z",
+            "syncEndTime": "2026-01-16T15:21:42.920Z",
+            "fromStartDate": "2026-01-09T06:00:00.000Z",
+            "toEndDate": "2026-01-24T05:59:59.999Z",
+            "status": "COMPLETED",
+            "errorMessage": null,
+            "recordsProcessed": 388,
+            "createdAt": "2026-01-16T15:21:42.465Z"
+          },
+          "worklistId": "c356f064-2e7c-45f5-8bbc-c792208c6e28",
+          "paymentMethodAttached": true
+        },
+        "paymentOptions": [
+          {
+            "id": "pm_1SDr38BnXgzXDYKOa2YXSq7n",
+            "object": "payment_method",
+            "allow_redisplay": "unspecified",
+            "billing_details": {
+              "address": {
+                "city": null,
+                "country": "US",
+                "line1": null,
+                "line2": null,
+                "postal_code": "36691",
+                "state": null
+              },
+              "email": null,
+              "name": null,
+              "phone": null,
+              "tax_id": null
+            },
+            "card": {
+              "brand": "visa",
+              "checks": {
+                "address_line1_check": null,
+                "address_postal_code_check": "pass",
+                "cvc_check": "pass"
+              },
+              "country": "US",
+              "display_brand": "visa",
+              "exp_month": 11,
+              "exp_year": 2025,
+              "fingerprint": "17VeL099JvcHkkBD",
+              "funding": "credit",
+              "generated_from": null,
+              "last4": "5010",
+              "networks": {
+                "available": [
+                  "visa"
+                ],
+                "preferred": null
+              },
+              "regulated_status": "unregulated",
+              "three_d_secure_usage": {
+                "supported": true
+              },
+              "wallet": null
+            },
+            "created": 1759428978,
+            "customer": "cus_SzK4LAMeC6lkJ4",
+            "customer_account": null,
+            "livemode": true,
+            "metadata": {},
+            "type": "card"
+          }
+        ],
+        "isAdmin": false
+      },
+      "timestamp": "2026-01-21T12:49:03.724Z"
+    },
+    "/group/providers?id=652020c6-9ea9-458e-8669-29bebc26d658&page=1&perPage=50": {
+      "description": "Providers in: Alabama Coastal Radiology",
+      "status": 500,
+      "success": false,
+      "data": {
+        "success": false,
+        "message": "You are not member of this group."
+      },
+      "timestamp": "2026-01-21T12:49:04.031Z"
+    },
+    "/group/652020c6-9ea9-458e-8669-29bebc26d658/providers/search?search=a": {
+      "description": "Provider search in: Alabama Coastal Radiology",
+      "status": 400,
+      "success": false,
+      "data": {
+        "message": "You are not member of this group.",
+        "error": "SEARCH_PROVIDERS_ERROR"
+      },
+      "timestamp": "2026-01-21T12:49:04.339Z"
+    },
+    "/group?id=c5951e94-83f2-4135-9c13-e4d6e09d36c4": {
+      "description": "Group details: RABR",
+      "status": 200,
+      "success": true,
+      "data": {
+        "message": "Group found",
+        "group": {
+          "id": "c5951e94-83f2-4135-9c13-e4d6e09d36c4",
+          "facilityId": null,
+          "facilityName": "RABR",
+          "description": "Radiology Associates of Baton Rouge",
+          "isActive": true,
+          "phone": "+12257570552",
+          "email": "mcallais@lakeradiology.com",
+          "groupStatus": "open",
+          "timeZone": "America/Chicago",
+          "stripeCustomerId": "cus_Re9ptIayTltnDf",
+          "payoutEnabled": false,
+          "rvuRateVisible": false,
+          "preferredPaymentMethodId": "pm_1QkxulBnXgzXDYKOrj0gjmK3",
+          "preferredPaymentMethodType": "card",
+          "updatedAt": "2026-01-21T03:02:19.594Z",
+          "createdAt": "2024-05-31T18:36:14.195Z",
+          "usdPerRvuHigh": "100",
+          "usdPerRvuLow": "30",
+          "usdPerRvuRecent": "65",
+          "lastSync": {
+            "id": "43bb4e59-6d2d-457a-bfea-f9faaaef3b5c",
+            "syncStartTime": "2026-01-21T00:40:01.513Z",
+            "syncEndTime": "2026-01-21T00:40:03.164Z",
+            "fromStartDate": "2026-01-13T06:00:00.000Z",
+            "toEndDate": "2026-01-28T05:59:59.999Z",
+            "status": "COMPLETED",
+            "errorMessage": null,
+            "recordsProcessed": 686,
+            "createdAt": "2026-01-21T00:40:01.522Z"
+          },
+          "worklistId": "fc970b50-5731-4e6f-82c0-a6bfe5b4be98",
+          "paymentMethodAttached": true
+        },
+        "paymentOptions": [
+          {
+            "id": "pm_1QkxulBnXgzXDYKOrj0gjmK3",
+            "object": "payment_method",
+            "allow_redisplay": "unspecified",
+            "billing_details": {
+              "address": {
+                "city": null,
+                "country": "US",
+                "line1": null,
+                "line2": null,
+                "postal_code": "70810",
+                "state": null
+              },
+              "email": null,
+              "name": null,
+              "phone": null,
+              "tax_id": null
+            },
+            "card": {
+              "brand": "visa",
+              "checks": {
+                "address_line1_check": null,
+                "address_postal_code_check": "pass",
+                "cvc_check": "pass"
+              },
+              "country": "US",
+              "display_brand": "visa",
+              "exp_month": 6,
+              "exp_year": 2027,
+              "fingerprint": "cPEZ8KVY2vMKw2Ry",
+              "funding": "credit",
+              "generated_from": null,
+              "last4": "7931",
+              "networks": {
+                "available": [
+                  "visa"
+                ],
+                "preferred": null
+              },
+              "regulated_status": "unregulated",
+              "three_d_secure_usage": {
+                "supported": true
+              },
+              "wallet": null
+            },
+            "created": 1737767519,
+            "customer": "cus_Re9ptIayTltnDf",
+            "customer_account": null,
+            "livemode": true,
+            "metadata": {},
+            "type": "card"
+          }
+        ],
+        "isAdmin": false
+      },
+      "timestamp": "2026-01-21T12:49:07.772Z"
+    },
+    "/group/providers?id=c5951e94-83f2-4135-9c13-e4d6e09d36c4&page=1&perPage=50": {
+      "description": "Providers in: RABR",
+      "status": 500,
+      "success": false,
+      "data": {
+        "success": false,
+        "message": "You are not member of this group."
+      },
+      "timestamp": "2026-01-21T12:49:08.082Z"
+    },
+    "/group/c5951e94-83f2-4135-9c13-e4d6e09d36c4/providers/search?search=a": {
+      "description": "Provider search in: RABR",
+      "status": 400,
+      "success": false,
+      "data": {
+        "message": "You are not member of this group.",
+        "error": "SEARCH_PROVIDERS_ERROR"
+      },
+      "timestamp": "2026-01-21T12:49:08.349Z"
+    }
+  },
+  "allGroupsCollected": [
+    {
+      "id": "652020c6-9ea9-458e-8669-29bebc26d658",
+      "facilityName": "Alabama Coastal Radiology",
+      "description": "Mobile Infirmary Health System",
+      "phone": "+12514600326",
+      "isActive": true,
+      "groupStatus": "open",
+      "payoutEnabled": false,
+      "groupProvidersCount": 27,
+      "userStatusInGroup": null,
+      "usdPerRvuHigh": "45",
+      "usdPerRvuLow": "10",
+      "usdPerRvuRecent": "45",
+      "rvuRateVisible": false
+    },
+    {
+      "id": "c5951e94-83f2-4135-9c13-e4d6e09d36c4",
+      "facilityName": "RABR",
+      "description": "Radiology Associates of Baton Rouge",
+      "phone": "+12257570552",
+      "isActive": true,
+      "groupStatus": "open",
+      "payoutEnabled": false,
+      "groupProvidersCount": 76,
+      "userStatusInGroup": null,
+      "usdPerRvuHigh": "100",
+      "usdPerRvuLow": "30",
+      "usdPerRvuRecent": "65",
+      "rvuRateVisible": false
+    }
+  ]
+}

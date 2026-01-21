@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-01-21T12:48:57.036Z",
+  "testAccount": {
+    "email": "test443675@example.com",
+    "userId": "9bade7f2-076a-4f80-a7a6-28cb3fba0d56"
+  },
+  "totalEndpointsTested": 12,
+  "successfulRequests": 8,
+  "totalGroupsFound": 2,
+  "endpointsSummary": [
+    {
+      "endpoint": "/user",
+      "status": 200,
+      "description": "Current user complete profile",
+      "dataSize": 1126
+    },
+    {
+      "endpoint": "/allGroups?page=1&perPage=50",
+      "status": 200,
+      "description": "All groups in system - Page 1",
+      "dataSize": 764
+    },
+    {
+      "endpoint": "/myGroups?page=1&perPage=50",
+      "status": 200,
+      "description": "User group memberships",
+      "dataSize": 70
+    },
+    {
+      "endpoint": "/group/checkUserLnqRights",
+      "status": 200,
+      "description": "User LnQ permissions",
+      "dataSize": 34
+    },
+    {
+      "endpoint": "/group/checkUserRVUTrackerRights",
+      "status": 200,
+      "description": "User RVU tracker permissions",
+      "dataSize": 41
+    },
+    {
+      "endpoint": "/group/getGroupsWithLnqRights?page=1&perPage=50",
+      "status": 200,
+      "description": "Groups with LnQ rights",
+      "dataSize": 70
+    },
+    {
+      "endpoint": "/group?id=652020c6-9ea9-458e-8669-29bebc26d658",
+      "status": 200,
+      "description": "Group details: Alabama Coastal Radiology",
+      "dataSize": 1868
+    },
+    {
+      "endpoint": "/group/providers?id=652020c6-9ea9-458e-8669-29bebc26d658&page=1&perPage=50",
+      "status": 500,
+      "description": "Providers in: Alabama Coastal Radiology",
+      "dataSize": 63
+    },
+    {
+      "endpoint": "/group/652020c6-9ea9-458e-8669-29bebc26d658/providers/search?search=a",
+      "status": 400,
+      "description": "Provider search in: Alabama Coastal Radiology",
+      "dataSize": 80
+    },
+    {
+      "endpoint": "/group?id=c5951e94-83f2-4135-9c13-e4d6e09d36c4",
+      "status": 200,
+      "description": "Group details: RABR",
+      "dataSize": 1861
+    },
+    {
+      "endpoint": "/group/providers?id=c5951e94-83f2-4135-9c13-e4d6e09d36c4&page=1&perPage=50",
+      "status": 500,
+      "description": "Providers in: RABR",
+      "dataSize": 63
+    },
+    {
+      "endpoint": "/group/c5951e94-83f2-4135-9c13-e4d6e09d36c4/providers/search?search=a",
+      "status": 400,
+      "description": "Provider search in: RABR",
+      "dataSize": 80
+    }
+  ]
+}

@@ -1,0 +1,498 @@
+{
+  "metadata": {
+    "extractionDate": "2026-01-21T13:52:25.982Z",
+    "purpose": "Security Vulnerability Demonstration for Management Escalation",
+    "severity": "CRITICAL",
+    "testAccount": {
+      "email": "test443675@example.com",
+      "userId": "9bade7f2-076a-4f80-a7a6-28cb3fba0d56",
+      "role": "provider",
+      "groupMemberships": 0,
+      "note": "Newly registered user with NO group memberships"
+    },
+    "vulnerabilitySummary": {
+      "type": "Insecure Direct Object Reference (IDOR) + Information Disclosure",
+      "cvss": "9.1 CRITICAL",
+      "impact": "Complete access to financial and business data without authorization"
+    }
+  },
+  "currentUserProfile": {
+    "id": "9bade7f2-076a-4f80-a7a6-28cb3fba0d56",
+    "email": "test443675@example.com",
+    "firstName": "Test443675",
+    "lastName": "User443675",
+    "phone": "+15550443675",
+    "address": null,
+    "role": "provider",
+    "providerId": "PROV443675",
+    "isAvailable": false,
+    "mfaEnabled": false,
+    "smsNotifications": true,
+    "accountStatus": "verified",
+    "resetCodeTimeStamp": null,
+    "resetCode": null,
+    "updatedAt": "2026-01-21T12:33:14.533Z",
+    "createdAt": "2026-01-21T12:33:14.533Z",
+    "stripeAccountId": null,
+    "cometChatId": "6912ff95-5cfc-4665-9e1d-5d1434fddea7",
+    "disabled": false,
+    "pushNotificationsEnabled": false,
+    "userInterest": {
+      "id": "ea972d5a-9909-4f86-9132-b529ad534f60",
+      "name": "Test443675 User443675",
+      "phone": "+15550443675",
+      "email": "test443675@example.com",
+      "specialty": "Radiology",
+      "additionalInfo": null,
+      "availabilityPreferenceDays": [],
+      "availabilityPreferenceHours": [],
+      "weekdays": false,
+      "weekends": false,
+      "swingShifts": false,
+      "overnights": false,
+      "dedicatedShifts": false,
+      "rvuPerMonth": null,
+      "stateLicenses": [
+        "CA",
+        "NY"
+      ],
+      "agreeToTerms": true,
+      "hasMalpracticeInsurance": true,
+      "userId": "9bade7f2-076a-4f80-a7a6-28cb3fba0d56",
+      "createdAt": "2026-01-21T12:33:14.533Z",
+      "updatedAt": "2026-01-21T12:33:14.533Z"
+    }
+  },
+  "allGroupsInSystem": [
+    {
+      "id": "652020c6-9ea9-458e-8669-29bebc26d658",
+      "facilityName": "Alabama Coastal Radiology",
+      "description": "Mobile Infirmary Health System",
+      "phone": "+12514600326",
+      "isActive": true,
+      "groupStatus": "open",
+      "payoutEnabled": false,
+      "groupProvidersCount": 27,
+      "userStatusInGroup": null,
+      "usdPerRvuHigh": "45",
+      "usdPerRvuLow": "10",
+      "usdPerRvuRecent": "45",
+      "rvuRateVisible": false
+    },
+    {
+      "id": "c5951e94-83f2-4135-9c13-e4d6e09d36c4",
+      "facilityName": "RABR",
+      "description": "Radiology Associates of Baton Rouge",
+      "phone": "+12257570552",
+      "isActive": true,
+      "groupStatus": "open",
+      "payoutEnabled": false,
+      "groupProvidersCount": 76,
+      "userStatusInGroup": null,
+      "usdPerRvuHigh": "100",
+      "usdPerRvuLow": "30",
+      "usdPerRvuRecent": "65",
+      "rvuRateVisible": false
+    }
+  ],
+  "completeGroupDetails": [
+    {
+      "groupInfo": {
+        "id": "652020c6-9ea9-458e-8669-29bebc26d658",
+        "facilityId": null,
+        "facilityName": "Alabama Coastal Radiology",
+        "description": "Mobile Infirmary Health System",
+        "isActive": true,
+        "phone": "+12514600326",
+        "email": "bblake@bwfcpa.com",
+        "groupStatus": "open",
+        "timeZone": "America/Chicago",
+        "stripeCustomerId": "cus_SzK4LAMeC6lkJ4",
+        "payoutEnabled": false,
+        "rvuRateVisible": false,
+        "preferredPaymentMethodId": "pm_1SDr38BnXgzXDYKOa2YXSq7n",
+        "preferredPaymentMethodType": "card",
+        "updatedAt": "2025-12-31T16:28:08.536Z",
+        "createdAt": "2025-09-03T18:29:01.944Z",
+        "usdPerRvuHigh": "45",
+        "usdPerRvuLow": "10",
+        "usdPerRvuRecent": "45",
+        "lastSync": {
+          "id": "b6bcbf55-e436-46eb-aa81-ee39a3eb0535",
+          "syncStartTime": "2026-01-16T15:21:42.461Z",
+          "syncEndTime": "2026-01-16T15:21:42.920Z",
+          "fromStartDate": "2026-01-09T06:00:00.000Z",
+          "toEndDate": "2026-01-24T05:59:59.999Z",
+          "status": "COMPLETED",
+          "errorMessage": null,
+          "recordsProcessed": 388,
+          "createdAt": "2026-01-16T15:21:42.465Z"
+        },
+        "worklistId": "c356f064-2e7c-45f5-8bbc-c792208c6e28",
+        "paymentMethodAttached": true
+      },
+      "paymentMethods": [
+        {
+          "id": "pm_1SDr38BnXgzXDYKOa2YXSq7n",
+          "object": "payment_method",
+          "allow_redisplay": "unspecified",
+          "billing_details": {
+            "address": {
+              "city": null,
+              "country": "US",
+              "line1": null,
+              "line2": null,
+              "postal_code": "36691",
+              "state": null
+            },
+            "email": null,
+            "name": null,
+            "phone": null,
+            "tax_id": null
+          },
+          "card": {
+            "brand": "visa",
+            "checks": {
+              "address_line1_check": null,
+              "address_postal_code_check": "pass",
+              "cvc_check": "pass"
+            },
+            "country": "US",
+            "display_brand": "visa",
+            "exp_month": 11,
+            "exp_year": 2025,
+            "fingerprint": "17VeL099JvcHkkBD",
+            "funding": "credit",
+            "generated_from": null,
+            "last4": "5010",
+            "networks": {
+              "available": [
+                "visa"
+              ],
+              "preferred": null
+            },
+            "regulated_status": "unregulated",
+            "three_d_secure_usage": {
+              "supported": true
+            },
+            "wallet": null
+          },
+          "created": 1759428978,
+          "customer": "cus_SzK4LAMeC6lkJ4",
+          "customer_account": null,
+          "livemode": true,
+          "metadata": {},
+          "type": "card"
+        }
+      ],
+      "isAdmin": false,
+      "accessedWithoutAuth": true,
+      "securityIssue": "CRITICAL - Non-member accessed financial data"
+    },
+    {
+      "groupInfo": {
+        "id": "c5951e94-83f2-4135-9c13-e4d6e09d36c4",
+        "facilityId": null,
+        "facilityName": "RABR",
+        "description": "Radiology Associates of Baton Rouge",
+        "isActive": true,
+        "phone": "+12257570552",
+        "email": "mcallais@lakeradiology.com",
+        "groupStatus": "open",
+        "timeZone": "America/Chicago",
+        "stripeCustomerId": "cus_Re9ptIayTltnDf",
+        "payoutEnabled": false,
+        "rvuRateVisible": false,
+        "preferredPaymentMethodId": "pm_1QkxulBnXgzXDYKOrj0gjmK3",
+        "preferredPaymentMethodType": "card",
+        "updatedAt": "2026-01-21T03:02:19.594Z",
+        "createdAt": "2024-05-31T18:36:14.195Z",
+        "usdPerRvuHigh": "100",
+        "usdPerRvuLow": "30",
+        "usdPerRvuRecent": "65",
+        "lastSync": {
+          "id": "43bb4e59-6d2d-457a-bfea-f9faaaef3b5c",
+          "syncStartTime": "2026-01-21T00:40:01.513Z",
+          "syncEndTime": "2026-01-21T00:40:03.164Z",
+          "fromStartDate": "2026-01-13T06:00:00.000Z",
+          "toEndDate": "2026-01-28T05:59:59.999Z",
+          "status": "COMPLETED",
+          "errorMessage": null,
+          "recordsProcessed": 686,
+          "createdAt": "2026-01-21T00:40:01.522Z"
+        },
+        "worklistId": "fc970b50-5731-4e6f-82c0-a6bfe5b4be98",
+        "paymentMethodAttached": true
+      },
+      "paymentMethods": [
+        {
+          "id": "pm_1QkxulBnXgzXDYKOrj0gjmK3",
+          "object": "payment_method",
+          "allow_redisplay": "unspecified",
+          "billing_details": {
+            "address": {
+              "city": null,
+              "country": "US",
+              "line1": null,
+              "line2": null,
+              "postal_code": "70810",
+              "state": null
+            },
+            "email": null,
+            "name": null,
+            "phone": null,
+            "tax_id": null
+          },
+          "card": {
+            "brand": "visa",
+            "checks": {
+              "address_line1_check": null,
+              "address_postal_code_check": "pass",
+              "cvc_check": "pass"
+            },
+            "country": "US",
+            "display_brand": "visa",
+            "exp_month": 6,
+            "exp_year": 2027,
+            "fingerprint": "cPEZ8KVY2vMKw2Ry",
+            "funding": "credit",
+            "generated_from": null,
+            "last4": "7931",
+            "networks": {
+              "available": [
+                "visa"
+              ],
+              "preferred": null
+            },
+            "regulated_status": "unregulated",
+            "three_d_secure_usage": {
+              "supported": true
+            },
+            "wallet": null
+          },
+          "created": 1737767519,
+          "customer": "cus_Re9ptIayTltnDf",
+          "customer_account": null,
+          "livemode": true,
+          "metadata": {},
+          "type": "card"
+        }
+      ],
+      "isAdmin": false,
+      "accessedWithoutAuth": true,
+      "securityIssue": "CRITICAL - Non-member accessed financial data"
+    }
+  ],
+  "exposedFinancialData": [
+    {
+      "groupName": "Alabama Coastal Radiology",
+      "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+      "stripeCustomerId": "cus_SzK4LAMeC6lkJ4",
+      "paymentMethodId": "pm_1SDr38BnXgzXDYKOa2YXSq7n",
+      "cardBrand": "visa",
+      "cardLast4": "5010",
+      "cardExpiry": "11/2025",
+      "cardCountry": "US",
+      "cardFunding": "credit",
+      "billingPostalCode": "36691",
+      "billingCountry": "US",
+      "isLiveMode": true,
+      "preferredPaymentMethod": true,
+      "rvu_pricing": {
+        "high": "45",
+        "low": "10",
+        "recent": "45"
+      }
+    },
+    {
+      "groupName": "RABR",
+      "groupId": "c5951e94-83f2-4135-9c13-e4d6e09d36c4",
+      "stripeCustomerId": "cus_Re9ptIayTltnDf",
+      "paymentMethodId": "pm_1QkxulBnXgzXDYKOrj0gjmK3",
+      "cardBrand": "visa",
+      "cardLast4": "7931",
+      "cardExpiry": "6/2027",
+      "cardCountry": "US",
+      "cardFunding": "credit",
+      "billingPostalCode": "70810",
+      "billingCountry": "US",
+      "isLiveMode": true,
+      "preferredPaymentMethod": true,
+      "rvu_pricing": {
+        "high": "100",
+        "low": "30",
+        "recent": "65"
+      }
+    }
+  ],
+  "exposedContactInformation": [
+    {
+      "type": "phone",
+      "value": "+12514600326",
+      "belongsTo": "Alabama Coastal Radiology",
+      "groupId": "652020c6-9ea9-458e-8669-29bebc26d658"
+    },
+    {
+      "type": "phone",
+      "value": "+12257570552",
+      "belongsTo": "RABR",
+      "groupId": "c5951e94-83f2-4135-9c13-e4d6e09d36c4"
+    },
+    {
+      "type": "email",
+      "value": "bblake@bwfcpa.com",
+      "belongsTo": "Alabama Coastal Radiology",
+      "groupId": "652020c6-9ea9-458e-8669-29bebc26d658"
+    },
+    {
+      "type": "email",
+      "value": "mcallais@lakeradiology.com",
+      "belongsTo": "RABR",
+      "groupId": "c5951e94-83f2-4135-9c13-e4d6e09d36c4"
+    }
+  ],
+  "systemInformation": {
+    "userPermissions": {
+      "lnqRights": {
+        "hasLnqRights": false,
+        "groups": []
+      },
+      "rvuTrackerRights": {
+        "hasRVUTrackerRights": false,
+        "groups": []
+      }
+    },
+    "apiEndpointsTested": [
+      "/user",
+      "/allGroups",
+      "/myGroups",
+      "/group?id={uuid}",
+      "/group/providers",
+      "/group/{uuid}/providers/search",
+      "/group/checkUserLnqRights",
+      "/group/checkUserRVUTrackerRights",
+      "/group/getGroupsWithLnqRights"
+    ],
+    "authenticationMethod": "JWT Bearer Token",
+    "apiBaseUrl": "https://backend.lnq.health/api"
+  },
+  "statistics": {
+    "totalGroupsFound": 2,
+    "totalGroupsAccessedWithoutAuth": 2,
+    "totalPaymentMethodsExposed": 2,
+    "totalEmailsExposed": 2,
+    "totalPhoneNumbersExposed": 2,
+    "totalStripeCustomerIdsExposed": 2,
+    "totalProvidersInSystem": 103,
+    "estimatedMonetaryImpact": "HIGH - Live payment methods exposed"
+  },
+  "executiveSummary": {
+    "title": "CRITICAL SECURITY VULNERABILITY - IDOR & Information Disclosure",
+    "date": "2026-01-21T13:52:36.642Z",
+    "severity": "CRITICAL (CVSS 9.1)",
+    "keyFindings": [
+      "Unauthorized access to 2 groups",
+      "2 payment methods exposed (LIVE Stripe)",
+      "2 Stripe customer IDs leaked",
+      "2 email addresses exposed",
+      "2 phone numbers exposed",
+      "Financial pricing data leaked (RVU rates)",
+      "103 total providers' data at risk"
+    ],
+    "vulnerabilityDetails": {
+      "type": "Insecure Direct Object Reference (IDOR)",
+      "cwe": "CWE-639: Authorization Bypass Through User-Controlled Key",
+      "owasp": "A01:2021 – Broken Access Control",
+      "description": "Any authenticated user can access complete group details including financial information by simply knowing or guessing the group UUID",
+      "exploitability": "TRIVIAL - No special tools required, standard HTTP requests",
+      "dataAtRisk": "Payment methods, Stripe IDs, PII, business intelligence, pricing data"
+    },
+    "businessImpact": {
+      "financialRisk": "HIGH - Live payment methods exposed to unauthorized users",
+      "reputationalRisk": "CRITICAL - Healthcare data exposure, HIPAA implications",
+      "complianceRisk": "CRITICAL - HIPAA, PCI-DSS, GDPR violations likely",
+      "competitiveRisk": "HIGH - Pricing and business intelligence leaked",
+      "legalRisk": "CRITICAL - Potential class-action lawsuits, regulatory fines"
+    },
+    "affectedGroups": [
+      {
+        "facilityName": "Alabama Coastal Radiology",
+        "providersCount": 27,
+        "paymentMethodsExposed": 1,
+        "financialDataExposed": true
+      },
+      {
+        "facilityName": "RABR",
+        "providersCount": 76,
+        "paymentMethodsExposed": 1,
+        "financialDataExposed": true
+      }
+    ],
+    "immediateActions": [
+      "IMMEDIATE: Disable /group?id={uuid} endpoint for non-members",
+      "IMMEDIATE: Implement authorization checks on all group endpoints",
+      "IMMEDIATE: Audit access logs for potential exploitation",
+      "URGENT: Notify affected facilities of data exposure",
+      "URGENT: Review PCI-DSS compliance status",
+      "URGENT: Conduct full security audit of all API endpoints"
+    ],
+    "estimatedTimeToFix": "4-8 hours for immediate patch, 1-2 weeks for comprehensive fix",
+    "estimatedCostIfExploited": "$500K - $5M+ (fines, lawsuits, remediation, reputation damage)"
+  },
+  "securityRecommendations": {
+    "immediate": [
+      {
+        "priority": "P0 - CRITICAL",
+        "action": "Implement authorization check on /group endpoint",
+        "code": "Verify user is member/admin before returning group details",
+        "timeline": "4 hours"
+      },
+      {
+        "priority": "P0 - CRITICAL",
+        "action": "Remove payment information from unauthorized responses",
+        "code": "Only return payment methods to group administrators",
+        "timeline": "4 hours"
+      },
+      {
+        "priority": "P0 - CRITICAL",
+        "action": "Restrict /allGroups endpoint",
+        "code": "Only show groups where user has membership or pending request",
+        "timeline": "4 hours"
+      }
+    ],
+    "shortTerm": [
+      {
+        "priority": "P1 - HIGH",
+        "action": "Implement comprehensive RBAC",
+        "timeline": "1 week"
+      },
+      {
+        "priority": "P1 - HIGH",
+        "action": "Add audit logging for all sensitive data access",
+        "timeline": "1 week"
+      },
+      {
+        "priority": "P1 - HIGH",
+        "action": "Review all API endpoints for similar vulnerabilities",
+        "timeline": "2 weeks"
+      }
+    ],
+    "longTerm": [
+      {
+        "priority": "P2 - MEDIUM",
+        "action": "Implement automated security testing in CI/CD",
+        "timeline": "1 month"
+      },
+      {
+        "priority": "P2 - MEDIUM",
+        "action": "Conduct full penetration test",
+        "timeline": "1 month"
+      },
+      {
+        "priority": "P2 - MEDIUM",
+        "action": "Implement data minimization across all endpoints",
+        "timeline": "2 months"
+      }
+    ]
+  }
+}
