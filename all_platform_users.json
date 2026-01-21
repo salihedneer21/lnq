@@ -1,0 +1,407 @@
+[
+  {
+    "id": "c5cc986b-2387-4a2a-a175-3b74c8fbf40b",
+    "firstName": "Dean",
+    "lastName": "Asher",
+    "providerId": "1700856192",
+    "accountStatus": "verified",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "admin",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "59f215ce-84b7-43e1-937c-52c88e5cb2df",
+    "firstName": "Brent ",
+    "lastName": "Blake",
+    "providerId": "blake",
+    "accountStatus": "verified",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "admin",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "1b99e061-e08a-445e-a68c-e0c9d332b2f6",
+    "firstName": "Hal",
+    "lastName": "Clark",
+    "providerId": "1083934467",
+    "accountStatus": "temp_password",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "member",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "edb2f953-48c3-43d6-a0b5-7050ec9c4554",
+    "firstName": "James",
+    "lastName": "Courtney",
+    "providerId": "1184627796",
+    "accountStatus": "needs_password_update",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "member",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "a263ebbd-9e25-4612-a8ac-a291a89e1837",
+    "firstName": "Jack",
+    "lastName": "Cunningham",
+    "providerId": "1114218112",
+    "accountStatus": "verified",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "admin",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "6d120c56-85e9-4cdb-ac35-e5cc0f383454",
+    "firstName": "Donna",
+    "lastName": "Donati",
+    "providerId": "1477534121",
+    "accountStatus": "verified",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "member",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "a7586036-3a3e-4e8e-8f58-a618790ba950",
+    "firstName": "Robert",
+    "lastName": "Favret, Jr.",
+    "providerId": "1881676708",
+    "accountStatus": "verified",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "admin",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "d77e5eb4-d78e-41bd-b51d-847a8a7778db",
+    "firstName": "Paul",
+    "lastName": "Hannon III",
+    "providerId": "1598994451",
+    "accountStatus": "pending_first_login",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "member",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "400da977-3fbe-47c8-98b0-ec3a5d2f943b",
+    "firstName": "Travis",
+    "lastName": "Harris",
+    "providerId": "1760741185",
+    "accountStatus": "verified",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "member",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "af9a43d3-078c-4c1f-b480-f5afad0411e7",
+    "firstName": "Michael",
+    "lastName": "Heiser",
+    "providerId": "1962484816",
+    "accountStatus": "verified",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "member",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "b43f05ee-2257-4287-9be7-0866a3b2d40b",
+    "firstName": "Bryan",
+    "lastName": "Jordan",
+    "providerId": "1477873495",
+    "accountStatus": "verified",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "member",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "8c000b9a-3b56-4167-b25d-7aeec1f45146",
+    "firstName": "Michael",
+    "lastName": "Lawrence",
+    "providerId": "1053654731",
+    "accountStatus": "verified",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "member",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "e2041706-3389-486a-81e4-2e6ed5757436",
+    "firstName": "Ryan ",
+    "lastName": "Majoria",
+    "providerId": "1457330714",
+    "accountStatus": "verified",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "admin",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "e2131cff-ec8e-4b08-a06d-e533b84c0dbd",
+    "firstName": "Mark",
+    "lastName": "McCaslin",
+    "providerId": "1801877543",
+    "accountStatus": "pending_first_login",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "member",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "04a1c877-2ec3-4a4f-8e02-ed824cfaa0bf",
+    "firstName": "Michael",
+    "lastName": "Pennington",
+    "providerId": "1558364158",
+    "accountStatus": "needs_password_update",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "member",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "68fed7d9-4a03-44d8-bcae-201ace01a724",
+    "firstName": "Brandon",
+    "lastName": "Peters",
+    "providerId": "1437245420",
+    "accountStatus": "pending_first_login",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "member",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "5feec6b9-a3ba-4a51-a96b-5b239ddbe3f7",
+    "firstName": "Kate",
+    "lastName": "Pietkiewicz",
+    "providerId": "KATEPIETKIEWICZ",
+    "accountStatus": "verified",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "admin",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "2023edae-df8c-47d3-bb32-c6731008809d",
+    "firstName": "J. Taylor",
+    "lastName": "Smith",
+    "providerId": "1003278110",
+    "accountStatus": "needs_password_update",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "member",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "43adae8c-c407-4d20-b2ea-2112c6f79a4b",
+    "firstName": "Joseph",
+    "lastName": "Sullivan III",
+    "providerId": "1043303548",
+    "accountStatus": "pending_first_login",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "member",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "a7c5ec0a-beb1-43a3-89b8-83a50a35e506",
+    "firstName": "Roger",
+    "lastName": "Tart",
+    "providerId": "1902887615",
+    "accountStatus": "pending_first_login",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "member",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "09db1d01-9a77-403d-ac1e-dc4b536f284f",
+    "firstName": "W. Jacob",
+    "lastName": "Thomas",
+    "providerId": "1124554712",
+    "accountStatus": "needs_password_update",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "member",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "5181b961-242a-4e1d-aa7f-8334add3fc0c",
+    "firstName": "Bradford ",
+    "lastName": "Winfrey",
+    "providerId": "brandfordwinfrey",
+    "accountStatus": "verified",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "admin",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "27a83b9d-ab42-4b52-aaea-9ac1fa28d12f",
+    "firstName": "Scott",
+    "lastName": "Minto",
+    "providerId": "1447316195",
+    "accountStatus": "verified",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "admin",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "4aab687c-caf6-4e8a-bbd8-59c4dac08a56",
+    "firstName": "Michelle",
+    "lastName": "Winton",
+    "providerId": "891089108",
+    "accountStatus": "verified",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "admin",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "a08e7cd1-d7f4-4c21-854f-ae69dc3e30d1",
+    "firstName": "John",
+    "lastName": "Doremus, Jr.",
+    "providerId": "1235101973",
+    "accountStatus": "pending_first_login",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "member",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "4ddee68c-49cf-4949-a3f5-505bbaf2016c",
+    "firstName": "Kit",
+    "lastName": "Lursen",
+    "providerId": "1487869244",
+    "accountStatus": "verified",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "admin",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  },
+  {
+    "id": "e85fa3a1-3b46-45bf-935a-e8c735955429",
+    "firstName": "John",
+    "lastName": "Renz",
+    "providerId": "1104807825",
+    "accountStatus": "pending_first_login",
+    "isAvailable": false,
+    "disabled": false,
+    "role": "member",
+    "group": "Alabama Coastal Radiology",
+    "groupId": "652020c6-9ea9-458e-8669-29bebc26d658",
+    "groups": [
+      "Alabama Coastal Radiology"
+    ]
+  }
+]
